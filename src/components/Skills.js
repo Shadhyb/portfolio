@@ -40,37 +40,59 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <ProgressBar
-                    variant="success"
-                    now={80}
-                    label={`${now[0]}%`}
-                  />
-
-                  <h5>HTML</h5>
+                  <div className="prog-bar">
+                    <ProgressBar
+                      animated
+                      variant="success"
+                      now={80}
+                      label={`${now[0]}%`}
+                    />
+                    <h5>HTML</h5>
+                  </div>
                 </div>
                 <div className="item">
-                  <ProgressBar
-                    variant="primary"
-                    now={60}
-                    label={`${now[1]}%`}
-                  />
-                  <h5>CSS3</h5>
+                  <div className="prog-bar">
+                    <ProgressBar
+                      animated
+                      variant="primary"
+                      now={60}
+                      label={`${now[1]}%`}
+                    />
+                    <h5>CSS3</h5>
+                  </div>
                 </div>
                 <div className="item">
-                  <ProgressBar
-                    variant="warning"
-                    now={70}
-                    label={`${now[2]}%`}
-                  />
-                  <h5>Javascript</h5>
+                  <div className="prog-bar">
+                    <ProgressBar
+                      animated
+                      variant="warning"
+                      now={70}
+                      label={`${now[2]}%`}
+                    />
+                    <h5>Javascript</h5>
+                  </div>
                 </div>
                 <div className="item">
-                  <ProgressBar variant="danger" now={60} label={`${now[3]}%`} />
-                  <h5>Angular</h5>
+                  <div className="prog-bar">
+                    <ProgressBar
+                      animated
+                      variant="danger"
+                      now={60}
+                      label={`${now[3]}%`}
+                    />
+                    <h5>Angular</h5>
+                  </div>
                 </div>
                 <div className="item">
-                  <ProgressBar variant="info" now={30} label={`${now[4]}%`} />
-                  <h5>React</h5>
+                  <div className="prog-bar">
+                    <ProgressBar
+                      animated
+                      variant="info"
+                      now={30}
+                      label={`${now[4]}%`}
+                    />
+                    <h5>React</h5>
+                  </div>
                 </div>
               </Carousel>
             </div>
