@@ -28,7 +28,7 @@ export const NavBar = () => {
         <Navbar.Brand href="#home">
           <img src={logo} alt="logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="navbarScroll">
           <span className="navbar-toggle-icon" />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
@@ -70,14 +70,18 @@ export const NavBar = () => {
                 <img src={linkedin3d} alt="linkedin"></img>
               </a>
             </div>
-            <button
-              className={
-                activeLink === "connect" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("connect")}
-            >
-              <span>Let's connect !</span>
-            </button>
+            <Nav.Link href="#contact">
+              <button
+                className={
+                  activeLink === "contact"
+                    ? "active navbar-link"
+                    : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("contact")}
+              >
+                <span>Let's connect !</span>
+              </button>
+            </Nav.Link>
           </span>
         </Navbar.Collapse>
       </Container>

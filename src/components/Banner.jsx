@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, NavLink } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/macbook.png";
 export const Banner = () => {
@@ -51,10 +51,12 @@ export const Banner = () => {
               <span className="wrap">{text}</span>
             </h1>
             <p>HTML | CSS3 | Javascript | Angular JS | React JS</p>
-            <button onClick={() => console.log("connect")}>
-              Let's connect
-              <ArrowRightCircle size={25} />
-            </button>
+            <NavLink href="#contact">
+              <button onClick={() => "contact"}>
+                Let's connect
+                <ArrowRightCircle size={25} />
+              </button>
+            </NavLink>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img className="headerImg" src={headerImg} alt="Header Img" />

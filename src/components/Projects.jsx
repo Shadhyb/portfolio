@@ -12,7 +12,7 @@ import { ProjectCard } from "./ProjectCard";
 export const Projects = () => {
   const projects = [
     {
-      title: "Calculator Simulator",
+      title: "Calculator",
       language1: "HTML",
       language2: "CSS",
       language3: "JavaScript",
@@ -57,7 +57,7 @@ export const Projects = () => {
     },
   ];
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
