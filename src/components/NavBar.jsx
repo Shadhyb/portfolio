@@ -28,9 +28,7 @@ export const NavBar = () => {
         <Navbar.Brand href="#home">
           <img src={logo} alt="logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll">
-          <span className="navbar-toggle-icon" />
-        </Navbar.Toggle>
+        <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
@@ -61,7 +59,7 @@ export const NavBar = () => {
               Projects
             </Nav.Link>
           </Nav>
-          <span className="navbar-text">
+          <span className="navbar-text d-sm-none d-md-block d-lg-flex">
             <div className="social-icon">
               <a href="https://github.com/Shadhyb">
                 <img src={github3d} alt="github"></img>

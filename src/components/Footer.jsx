@@ -8,12 +8,9 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-items-center">
-          <Col size={4} sm={4}>
-            <img src={logo} alt="Logo" />
-          </Col>
-          <Col size={4} sm={4}></Col>
-          <Col size={4} sm={4} className="text-center text-sm-end">
+        <Row className=" align-items-center">
+          <Col sm={12} md={6} />
+          <Col sm={12} md={6} className="text-center text-sm-end p-4">
             <div className="social-icon">
               <a href="https://github.com/Shadhyb">
                 <img src={github3d} alt="Icon" />

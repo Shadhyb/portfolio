@@ -37,7 +37,7 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <h2>Get in touch</h2>
-          <Col xs={12} md={8} xl={8}>
+          <Col xs={12} md={6} xl={8}>
             <h4>contact me</h4>
             <p>
               For collaborations or for any other information,
@@ -46,7 +46,7 @@ export const Contact = () => {
               </span>
             </p>
           </Col>
-          <Col xs={12} md={4} xl={4}>
+          <Col xs={12} md={6} xl={4}>
             <Form ref={form} onSubmit={sendEmail}>
               <Form.Group className="mb-3">
                 <Form.Label htmlFor="">First name</Form.Label>
