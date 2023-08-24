@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-import logo from "../assets/img/logo_cut.png";
 import linkedin3d from "../assets/img/linkedin3d.png";
 import github3d from "../assets/img/github3d.png";
 

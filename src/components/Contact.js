@@ -1,12 +1,10 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Button from "react-bootstrap/Button";
-import Alert from "react-bootstrap/Alert";
-import { Container, Row, Col } from "react-bootstrap";
 
-import "animate.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 export const Contact = () => {
   useEffect(() => emailjs.init("XilvwiYQ7kF5fGrxF"), []);
@@ -41,9 +39,7 @@ export const Contact = () => {
             <h4>contact me</h4>
             <p>
               For collaborations or for any other information,
-              <span className="contact-span animate__animated animate__bounceIn">
-                &nbsp; please contact me!
-              </span>
+              <span className="contact-span ">&nbsp;please contact me!</span>
             </p>
           </Col>
           <Col xs={12} md={6} xl={4}>

@@ -1,6 +1,6 @@
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import { Container, Row, Col, Tab, Nav, TabPane } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import calcImg from "../assets/img/calc.jpeg";
 import courseImg from "../assets/img/corso.jpeg";
 import snakeImg from "../assets/img/snake.png";
@@ -17,6 +17,7 @@ export const Projects = () => {
       language2: "CSS",
       language3: "JavaScript",
       imgUrl: calcImg,
+      imgAlt: "calculator",
       link: "https://shadhyb.github.io/calculator-page/",
     },
     {
@@ -24,6 +25,7 @@ export const Projects = () => {
       language1: "HTML",
       language2: "CSS",
       imgUrl: courseImg,
+      imgAlt: "course",
       link: "https://shadhyb.github.io/corso-page/",
     },
     {
@@ -32,6 +34,7 @@ export const Projects = () => {
       language2: "CSS",
       language3: "JavaScript",
       imgUrl: snakeImg,
+      imgAlt: "snake",
       link: "https://shadhyb.github.io/snakegame/",
     },
     {
@@ -39,6 +42,7 @@ export const Projects = () => {
       language1: "HTML",
       language2: "CSS",
       imgUrl: legalImg,
+      imgAlt: "legal",
       link: "https://shadhyb.github.io/legalstudio/",
     },
     {
@@ -46,6 +50,7 @@ export const Projects = () => {
       language1: "React",
       language2: "",
       imgUrl: backImg,
+      imgAlt: "back",
       link: "https://backroads-shadhyb.netlify.app/",
     },
     {
@@ -53,6 +58,7 @@ export const Projects = () => {
       language1: "",
       language2: "",
       imgUrl: comingImg,
+      imgAlt: "coming",
       link: "https://github.com/Shadhyb",
     },
   ];
