@@ -90,7 +90,7 @@ nav.navbar.scrolled {
 }
 
 nav.navbar a.navbar-brand {
-  width: 20%;
+  width: 30%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -645,7 +645,7 @@ label {
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .navbar-brand {
-    width: 30% !important;
+    width: 40% !important;
   }
   .navbar-collapse {
     text-align: end !important;
