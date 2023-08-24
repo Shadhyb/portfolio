@@ -22,8 +22,13 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
+
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar
+      expand="lg"
+      data-bs-theme="dark"
+      className={scrolled ? "scrolled" : ""}
+    >
       <Container>
         <Navbar.Brand href="#home">
           <img src={logo} alt="logo" />
@@ -59,8 +64,8 @@ export const NavBar = () => {
               Projects
             </Nav.Link>
           </Nav>
-          <span className="navbar-text d-sm-none d-md-block d-lg-flex">
-            <div className="social-icon">
+          <span className="navbar-text d-sm-none d-md-block d-lg-flex flex-row">
+            <div className="social-icon d-lg-flex flex-row">
               <a href="https://github.com/Shadhyb">
                 <img src={github3d} alt="github"></img>
               </a>
