@@ -8,7 +8,7 @@ export const Banner = () => {
   const toRotate = ["Creative", " Front-End Developer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.round() * 100);
-  const time = 1000;
+  const time = 550;
 
   useEffect(() => {
     let ticker = setInterval(() => {
