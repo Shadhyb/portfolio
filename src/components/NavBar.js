@@ -29,7 +29,7 @@ export const NavBar = () => {
       data-bs-theme="dark"
       className={scrolled ? "scrolled" : ""}
     >
-      <Container>
+      <Container className="align-items-start">
         <Navbar.Brand href="#home">
           <img src={logo} alt="logo" />
         </Navbar.Brand>
