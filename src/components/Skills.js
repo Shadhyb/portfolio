@@ -16,7 +16,7 @@ export const Skills = () => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      partialVisibilityGutter: 40,
+      partialVisibilityGutter: 50,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -41,9 +41,10 @@ export const Skills = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                centerMode={false}
+                centerMode={true}
                 draggable
-                renderArrowsWhenDisabled={true}
+                arrows={false}
+                renderArrowsWhenDisabled={false}
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
