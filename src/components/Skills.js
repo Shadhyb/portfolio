@@ -16,7 +16,7 @@ export const Skills = () => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      partialVisibilityGutter: 50,
+      partialVisibilityGutter: 40,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -41,7 +41,7 @@ export const Skills = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                centerMode={true}
+                centerMode={false}
                 draggable
                 arrows={false}
                 renderArrowsWhenDisabled={false}
