@@ -624,7 +624,7 @@ span.wrap {
 }
 form {
   position: relative;
-  z-index: 4;
+  z-index: 2;
 }
 form button {
   position: absolute;
@@ -654,6 +654,17 @@ label {
 }
 
 @media screen and (min-width: 375px) {
+  .navbar-brand {
+    width: 30% !important;
+  }
+  .navbar-text {
+    display: none !important;
+  }
+  .navbar-collapse {
+    text-align: end !important;
+  }
+}
+@media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3) {
   .navbar-brand {
     width: 30% !important;
   }
