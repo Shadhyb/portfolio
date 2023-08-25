@@ -8,6 +8,7 @@ import legalImg from "../assets/img/legal.png";
 import backImg from "../assets/img/backroads.jpeg";
 import comingImg from "../assets/img/coming.png";
 import { ProjectCard } from "./ProjectCard";
+import { ArrowRight } from "react-bootstrap-icons";
 
 export const Projects = () => {
   const projects = [
@@ -78,7 +79,8 @@ export const Projects = () => {
                   <p>
                     Some of the projects I have worked on in the last period.
                     For each you will find the link to the actual project. For
-                    repositories <a href={projects[5].link}>go to my Github</a>
+                    repositories <ArrowRight size={25} />{" "}
+                    <a href={projects[5].link}>go to my Github</a>
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav

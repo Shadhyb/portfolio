@@ -49,6 +49,7 @@ export const Contact = () => {
                 <Form.Control
                   required
                   type="text"
+                  placeholder="Your first name"
                   defaultValue=""
                   name="name"
                 />
@@ -58,6 +59,7 @@ export const Contact = () => {
                 <Form.Control
                   required
                   type="text"
+                  placeholder="Your last name"
                   defaultValue=""
                   name="surname"
                 />
@@ -65,6 +67,7 @@ export const Contact = () => {
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label htmlFor="">Email address</Form.Label>
                 <Form.Control
+                  required
                   type="email"
                   placeholder="Enter email"
                   name="user_email"
@@ -76,6 +79,7 @@ export const Contact = () => {
               <Form.Group className="mb-3">
                 <FloatingLabel htmlFor="" label="Message">
                   <Form.Control
+                    required
                     as="textarea"
                     name="message"
                     style={{

@@ -17,13 +17,11 @@ export const Skills = () => {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
       partialVisibilityGutter: 40,
-      centerMode: true,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2,
       partialVisibilityGutter: 30,
-      centerMode: true,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },

@@ -13,6 +13,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -472,7 +474,9 @@ span.wrap {
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-
+.project p a {
+  text-decoration: underline;
+}
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
@@ -485,6 +489,10 @@ span.wrap {
 .proj-imgbx img {
   min-height: 150px !important;
   max-height: 240px !important ;
+  image-rendering: optimizeQuality;
+  -o-object-fit: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .proj-imgbx::before {
@@ -616,6 +624,7 @@ span.wrap {
 }
 form {
   position: relative;
+  z-index: 4;
 }
 form button {
   position: absolute;
@@ -646,7 +655,7 @@ label {
 
 @media screen and (min-width: 375px) {
   .navbar-brand {
-    width: 40% !important;
+    width: 30% !important;
   }
   .navbar-text {
     display: none !important;
