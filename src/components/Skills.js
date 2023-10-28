@@ -15,13 +15,13 @@ export const Skills = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 3,
       partialVisibilityGutter: 40,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3,
-      partialVisibilityGutter: 40,
+      items: 2,
+      partialVisibilityGutter: 30,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -37,17 +37,14 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>
-                Some languages and frameworks that I use the most.
-                <span> Drag or swipe this carousel to see them all</span>
-              </p>
-
+              <p>Some languages and frameworks that I use the most</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 centerMode={false}
                 draggable
                 arrows={false}
+                renderArrowsWhenDisabled={false}
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">

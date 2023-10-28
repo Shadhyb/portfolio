@@ -366,15 +366,10 @@ span.wrap {
   margin: 0 auto;
   position: relative;
 }
-.skill span {
-  display: block;
-  padding: 20px 0;
-  color: #f30092;
-  text-transform: lowercase;
-}
 .skill-slider .item {
   width: 50%;
-
+  margin-inline: 15px;
+  padding-inline: 16px;
   cursor: -webkit-grab;
   cursor: grab;
 }
@@ -649,19 +644,14 @@ label {
   padding: 16px;
 }
 
-.footer span {
+.footer p {
   font-weight: 400;
   font-size: 14px;
-  text-transform: uppercase;
-  color: rgb(96, 95, 95);
-  text-decoration: none;
+  color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
-.footer span a {
-  text-decoration: none;
-  color: #02c9f2;
-}
+
 @media screen and (min-width: 375px) {
   .navbar-brand {
     width: 30% !important;
