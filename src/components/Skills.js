@@ -5,7 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 export const Skills = () => {
-  let percentage = [80, 90, 80, 80, 60];
+  let percentage = [90, 90, 85, 80, 60];
   let skills = ["Html", "CSS", "JavaScript", "Angular JS", "React JS"];
 
   const responsive = {
