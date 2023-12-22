@@ -4,6 +4,7 @@ export const ProjectCard = ({
   language1,
   language2,
   language3,
+  language4,
   imgUrl,
   imgAlt,
   link,
@@ -15,7 +16,7 @@ export const ProjectCard = ({
         <div className="proj-txtx">
           <h4>{title}</h4>
           <p>
-            {language1} {language2} {language3}
+            {language1} {language2} {language3} {language4}
           </p>
           <button
             className="btn-page"

@@ -5,8 +5,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 export const Skills = () => {
-  let percentage = [90, 90, 85, 80, 60];
-  let skills = ["Html", "CSS", "JavaScript", "Angular JS", "React JS"];
+  let percentage = [90, 90, 85, 80, 60, 40];
+  let skills = ["Html", "CSS", "JavaScript", "Angular JS", "React JS", "PHP"];
 
   const responsive = {
     superLargeDesktop: {
@@ -123,6 +123,21 @@ export const Skills = () => {
                       })}
                     />
                     <h5>{skills[4]}</h5>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="prog-bar">
+                    <CircularProgressbar
+                      value={percentage[5]}
+                      text={`${percentage[5]}%`}
+                      strokeWidth={5}
+                      styles={buildStyles({
+                        pathColor: "#546195",
+                        trailColor: "gray",
+                        textColor: "#546195",
+                      })}
+                    />
+                    <h5>{skills[5]}</h5>
                   </div>
                 </div>
               </Carousel>

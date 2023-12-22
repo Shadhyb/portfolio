@@ -6,6 +6,7 @@ import courseImg from "../assets/img/corso.jpeg";
 import snakeImg from "../assets/img/snake.png";
 import legalImg from "../assets/img/legal.png";
 import backImg from "../assets/img/backroads.jpeg";
+import vale from "../assets/img/vale.png";
 import comingImg from "../assets/img/coming.png";
 import { ProjectCard } from "./ProjectCard";
 import { ArrowRight } from "react-bootstrap-icons";
@@ -55,6 +56,16 @@ export const Projects = () => {
       link: "https://backroads-shadhyb.netlify.app/",
     },
     {
+      title: "Valentinacorni.it",
+      language1: "HTML",
+      language2: "SCSS",
+      language3: "JavaScript",
+      language4: "PHP",
+      imgUrl: vale,
+      imgAlt: "valentinacorni.it",
+      link: "https://valentinacorni.it",
+    },
+    {
       title: "Coming Soon",
       language1: "",
       language2: "",
@@ -80,7 +91,7 @@ export const Projects = () => {
                     Some of the projects I have worked on in the last period.
                     For each you will find the link to the actual project. For
                     repositories <ArrowRight size={25} />{" "}
-                    <a href={projects[5].link}>go to my Github</a>
+                    <a href={projects[6].link}>go to my Github</a>
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -89,7 +100,12 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Projects</Nav.Link>
+                        <Nav.Link eventKey="first">Simple projects</Nav.Link>
+                      </Nav.Item>{" "}
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">
+                          Professional projects
+                        </Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -100,9 +116,19 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
+                          <ProjectCard key={projects[0]} {...projects[0]} />
+                          <ProjectCard key={projects[1]} {...projects[1]} />
+                          <ProjectCard key={projects[2]} {...projects[2]} />
+                        </Row>
+                        <Row>
+                          <ProjectCard key={projects[3]} {...projects[3]} />
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          <ProjectCard key={projects[4]} {...projects[4]} />
+                          <ProjectCard key={projects[5]} {...projects[5]} />
+                          <ProjectCard key={projects[6]} {...projects[6]} />
                         </Row>
                       </Tab.Pane>
                     </Tab.Content>
