@@ -50,7 +50,7 @@ export const Banner = () => {
               {`I am Pietro, `} <br />
               <span className="wrap">{text}</span>
             </h1>
-            <p>HTML | CSS3 | Javascript | Angular JS | React JS | PHPS</p>
+            <p>HTML | CSS3 | Javascript | Angular JS | React JS | PHP</p>
             <NavLink href="#contact">
               <button onClick={() => "contact"}>
                 Let's connect
