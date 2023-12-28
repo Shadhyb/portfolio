@@ -98,6 +98,7 @@ nav.navbar a.navbar-brand {
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
+  font-size: smaller;
   color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
@@ -105,6 +106,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
 }
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
@@ -481,6 +483,11 @@ span.wrap {
 .project p a {
   text-decoration: underline;
 }
+.project .nav.nav-pills .nav-link {
+  font-size: small;
+  text-wrap: balance;
+  line-height: 1.4;
+}
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
@@ -492,7 +499,7 @@ span.wrap {
 }
 .proj-imgbx img {
   min-height: 150px !important;
-  max-height: 240px !important ;
+  max-height: 200px !important ;
   image-rendering: optimizeQuality;
   -o-object-fit: cover;
   -o-object-fit: cover;

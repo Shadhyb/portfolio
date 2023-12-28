@@ -114,7 +114,7 @@ export const Projects = () => {
                         isVisible ? "animate__animated animate__slideInUp" : ""
                       }
                     >
-                      <Tab.Pane eventKey="first">
+                      <Tab.Pane  eventKey="first">
                         <Row>
                           <ProjectCard key={projects[0]} {...projects[0]} />
                           <ProjectCard key={projects[1]} {...projects[1]} />
@@ -124,7 +124,7 @@ export const Projects = () => {
                           <ProjectCard key={projects[3]} {...projects[3]} />
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second">
+                      <Tab.Pane  eventKey="second">
                         <Row>
                           <ProjectCard key={projects[4]} {...projects[4]} />
                           <ProjectCard key={projects[5]} {...projects[5]} />
