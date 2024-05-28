@@ -9,7 +9,7 @@ import backImg from "../assets/img/backroads.jpeg";
 import vale from "../assets/img/vale.png";
 import comingImg from "../assets/img/coming.png";
 import { ProjectCard } from "./ProjectCard";
-import { ArrowRight } from "react-bootstrap-icons";
+// import { ArrowRight } from "react-bootstrap-icons";
 
 export const Projects = () => {
   const projects = [
