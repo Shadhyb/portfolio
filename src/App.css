@@ -495,15 +495,16 @@ span.wrap {
   overflow: hidden;
   margin-bottom: 24px;
   min-height: 150px !important;
-  max-height: 240px !important ;
+  height: 180px !important ;
 }
 .proj-imgbx img {
   min-height: 150px !important;
-  max-height: 200px !important ;
+  max-height: 180px !important ;
   image-rendering: optimizeQuality;
   -o-object-fit: cover;
   -o-object-fit: cover;
   object-fit: cover;
+  object-position: center;
 }
 
 .proj-imgbx::before {
