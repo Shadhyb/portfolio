@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import cv from "../assets/pdf/CV.pdf";
+import cv from "../assets/pdf/CV EN 2024.pdf";
 import linkedin3d from "../assets/img/linkedin3d.png";
 import github3d from "../assets/img/github3d.png";
 import { ArrowDownCircle } from "react-bootstrap-icons";

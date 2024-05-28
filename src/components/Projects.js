@@ -90,7 +90,7 @@ export const Projects = () => {
                   <p>
                     Some of the projects I have worked on in the last period.
                     For each you will find the link to the actual project. For
-                    repositories <ArrowRight size={25} />{" "}
+                    repositories &nbsp;
                     <a href={projects[6].link}>go to my Github</a>
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">

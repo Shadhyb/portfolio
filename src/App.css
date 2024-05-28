@@ -88,14 +88,16 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0px 0;
-  height: 20vh;
+  height: 10vh;
   background-color: #1b02469f;
 }
 
 nav.navbar a.navbar-brand {
   width: 40%;
 }
-
+.navbar-expand-lg {
+  align-items: end !important;
+}
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   font-size: smaller;
@@ -124,8 +126,8 @@ span.navbar-text {
   padding-inline: 16px;
 }
 .social-icon a {
-  width: 42px;
-  height: 42px;
+  width: 30px;
+  height: 30px;
   display: inline-flex;
   margin-right: 6px;
   align-items: center;
@@ -158,8 +160,8 @@ span.navbar-text {
   color: #fff;
   border: 1.5px solid #fff;
   border-radius: 14px;
-  padding: 18px 34px;
-  font-size: 18px;
+  padding: 10px 20px;
+  font-size: 16px;
   text-wrap: nowrap;
   margin-left: 18px;
   position: relative;
@@ -444,7 +446,7 @@ span.wrap {
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 50%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -475,10 +477,8 @@ span.wrap {
   width: 100% !important;
 }
 .project .nav.nav-pills .nav-link.active {
-  border: 1px solid rgba(255, 255, 255, 1);
 }
 .nav-link#projects-tabs-tab-first {
-  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .project p a {
   text-decoration: underline;
@@ -593,6 +593,7 @@ span.wrap {
   padding: 60px 0 200px 0;
   line-height: 1.5;
   width: 100%;
+  filter: hue-rotate(313deg);
 }
 .contact .container {
   width: 90vw;
