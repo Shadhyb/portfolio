@@ -66,10 +66,13 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text d-sm-none d-md-block d-lg-flex flex-row">
             <div className="social-icon d-lg-flex flex-row">
-              <a href="https://github.com/Shadhyb">
+              <a href="https://github.com/Shadhyb" target="_blank">
                 <img src={github3d} alt="github"></img>
               </a>
-              <a href="https://www.linkedin.com/in/pietro-rimoli/">
+              <a
+                href="https://www.linkedin.com/in/pietro-rimoli/"
+                target="_blank"
+              >
                 <img src={linkedin3d} alt="linkedin"></img>
               </a>
             </div>
