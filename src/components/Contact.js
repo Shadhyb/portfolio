@@ -11,7 +11,7 @@ export const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-   // e.preventDefault();
+    // e.preventDefault();
 
     emailjs
       .sendForm(
@@ -23,11 +23,9 @@ export const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-       
         },
         (error) => {
           console.log(error.text);
-         
         }
       );
   };

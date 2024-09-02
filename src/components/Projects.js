@@ -103,7 +103,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Simple projects</Nav.Link>
                       </Nav.Item>{" "}
                       <Nav.Item>
-                        <Nav.Link eventKey="second">
+                        <Nav.Link className="secondTab" eventKey="second">
                           Professional projects
                         </Nav.Link>
                       </Nav.Item>
