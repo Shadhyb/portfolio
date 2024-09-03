@@ -110,14 +110,18 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
 }
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
+}
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
+  color: #a8fe39 !important;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: #740a79;
 }
+
 span.navbar-text {
   display: flex;
   align-items: center;
@@ -170,6 +174,9 @@ span.navbar-text {
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
+.navbar-text button:hover {
+  border: 1.5px solid #a8fe39;
+}
 .navbar-text button span {
   z-index: 1;
 }
@@ -184,7 +191,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #02c9f2;
+  color: #a8fe39;
 }
 .navbar-text button:hover::before {
   content: "";
@@ -295,6 +302,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
+.banner button:hover {
+  color: #a8fe39;
+}
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
@@ -302,7 +312,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
 }
 .banner button:hover svg {
-  margin-left: 25px;
+  margin-left: 15px;
+  transform: scale(110%);
+  color: #ff83cd;
 }
 .banner img {
   -webkit-animation: updown 3s linear infinite;
@@ -377,6 +389,7 @@ span.wrap {
   padding: 20px 0;
   color: #f30092;
   text-transform: lowercase;
+  font-size: smaller;
 }
 .skill-slider .item {
   width: 50%;

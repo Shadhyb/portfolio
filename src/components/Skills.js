@@ -5,7 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 export const Skills = () => {
-  let percentage = [90, 90, 85, 80, 60, 40];
+  let percentage = [90, 80, 90, 80, 60, 40];
   let skills = ["Html", "CSS", "JavaScript", "Angular JS", "React JS", "PHP"];
 
   const responsive = {
@@ -37,10 +37,7 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>
-                Some languages and frameworks that I use the most.
-                <span> Drag or swipe this carousel to see them all</span>
-              </p>
+              <p>Some languages and frameworks that I use the most.</p>
 
               <Carousel
                 responsive={responsive}
@@ -55,10 +52,10 @@ export const Skills = () => {
                     <CircularProgressbar
                       value={percentage[0]}
                       text={`${percentage[0]}%`}
-                      strokeWidth={4}
+                      strokeWidth={5}
                       styles={buildStyles({
                         pathColor: "#df4a17",
-                        trailColor: "gray",
+                        trailColor: "transparent",
                         textColor: "#df4a17",
                       })}
                     />
@@ -70,10 +67,10 @@ export const Skills = () => {
                     <CircularProgressbar
                       value={percentage[1]}
                       text={`${percentage[1]}%`}
-                      strokeWidth={4}
+                      strokeWidth={5}
                       styles={buildStyles({
                         pathColor: "#254add",
-                        trailColor: "gray",
+                        trailColor: "transparent",
                         textColor: "#254add",
                       })}
                     />
@@ -85,10 +82,10 @@ export const Skills = () => {
                     <CircularProgressbar
                       value={percentage[2]}
                       text={`${percentage[2]}%`}
-                      strokeWidth={4}
+                      strokeWidth={5}
                       styles={buildStyles({
                         pathColor: "#efd81d",
-                        trailColor: "gray",
+                        trailColor: "transparent",
                         textColor: "#efd81d",
                       })}
                     />
@@ -100,10 +97,10 @@ export const Skills = () => {
                     <CircularProgressbar
                       value={percentage[3]}
                       text={`${percentage[3]}%`}
-                      strokeWidth={4}
+                      strokeWidth={5}
                       styles={buildStyles({
                         pathColor: "#d60030",
-                        trailColor: "gray",
+                        trailColor: "transparent",
                         textColor: "#d60030",
                       })}
                     />
@@ -118,7 +115,7 @@ export const Skills = () => {
                       strokeWidth={5}
                       styles={buildStyles({
                         pathColor: "#5ed4f3",
-                        trailColor: "gray",
+                        trailColor: "transparent",
                         textColor: "#5ed4f3",
                       })}
                     />
@@ -133,7 +130,7 @@ export const Skills = () => {
                       strokeWidth={5}
                       styles={buildStyles({
                         pathColor: "#546195",
-                        trailColor: "gray",
+                        trailColor: "transparent",
                         textColor: "#546195",
                       })}
                     />
@@ -145,6 +142,9 @@ export const Skills = () => {
           </div>
         </div>
       </div>
+      <p>
+        <span> Drag or swipe this carousel to see them all</span>
+      </p>
     </section>
   );
 };
