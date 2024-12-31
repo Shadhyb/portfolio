@@ -5,7 +5,7 @@ import headerImg from "../assets/img/macbook.png";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Creativo", " Front-End Developer"];
+  const toRotate = [" Front-End Developer", "Sviluppatore di idee"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.round() * 100);
   const time = 550;
@@ -45,9 +45,9 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Benvenuti nel mio Portfolio</span>
+            <span className="tagline">Benvenuti nel Portfolio di</span>
             <h1>
-              {`Pietro - `} <br />
+              {`Pietro `} <br />
               <span className="wrap">{text}</span>
             </h1>
             <p>HTML | CSS3 | Javascript | Angular JS | React JS | PHP</p>
