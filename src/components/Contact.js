@@ -34,50 +34,49 @@ export const Contact = () => {
     <section className="contact" id="contact">
       <Container>
         <Row className="align-items-center">
-          <h2>Get in touch</h2>
+          <h2>Contattami!</h2>
           <Col xs={12} md={6} xl={8}>
-            <h4>contact me</h4>
+            {/* <h4>contact me</h4> */}
             <p>
-              For collaborations or for any other information,
-              <span className="contact-span ">&nbsp;please contact me!</span>
+              Se vuoi collaborare o per ogni altra informazioni,
+              <span className="contact-span ">
+                &nbsp;inviami una mail usando il form
+              </span>
             </p>
           </Col>
           <Col xs={12} md={6} xl={4}>
             <Form ref={form} onSubmit={sendEmail}>
               <Form.Group className="mb-3">
-                <Form.Label htmlFor="">First name</Form.Label>
+                <Form.Label htmlFor="">Nome</Form.Label>
                 <Form.Control
                   required
                   type="text"
-                  placeholder="Your first name"
+                  // placeholder="Nome"
                   defaultValue=""
                   name="name"
                 />
               </Form.Group>
               <Form.Group className="mb-3">
-                <Form.Label htmlFor="">Last name</Form.Label>
+                <Form.Label htmlFor="">Cognome</Form.Label>
                 <Form.Control
                   required
                   type="text"
-                  placeholder="Your last name"
+                  // placeholder="Your last name"
                   defaultValue=""
                   name="surname"
                 />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label htmlFor="">Email address</Form.Label>
+                <Form.Label htmlFor="">Email</Form.Label>
                 <Form.Control
                   required
                   type="email"
-                  placeholder="Enter email"
+                  // placeholder="Enter email"
                   name="user_email"
                 />
-                <Form.Text className="text-info">
-                  We'll never share your email with anyone else.
-                </Form.Text>
               </Form.Group>
               <Form.Group className="mb-3">
-                <FloatingLabel htmlFor="" label="Message">
+                <FloatingLabel htmlFor="" label="Scrivimi">
                   <Form.Control
                     required
                     as="textarea"
@@ -87,10 +86,13 @@ export const Contact = () => {
                     }}
                   />
                 </FloatingLabel>
+                <Form.Text className="text-info">
+                  Le tue informazioni non verranno condivise con nessun altro
+                </Form.Text>
               </Form.Group>
 
               <Button variant="info" type="submit">
-                Submit
+                Invia
               </Button>
             </Form>
           </Col>

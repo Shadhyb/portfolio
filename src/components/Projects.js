@@ -86,12 +86,12 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Projects</h2>
+                  <h2>Progetti</h2>
                   <p>
-                    Some of the projects I have worked on in the last period.
-                    For each you will find the link to the actual project. For
-                    repositories &nbsp;
-                    <a href={projects[6].link}>go to my Github</a>
+                    Alcuni dei progetti ai quali ho lavorato. Clicca su un
+                    progetto per vederlo. Trovi le repository sul mio profilo
+                    &nbsp;
+                    <a href={projects[6].link}>Github</a>
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -100,11 +100,11 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Simple projects</Nav.Link>
+                        <Nav.Link eventKey="first">Progetti semplici</Nav.Link>
                       </Nav.Item>{" "}
                       <Nav.Item>
                         <Nav.Link className="secondTab" eventKey="second">
-                          Professional projects
+                          Progetti professionali
                         </Nav.Link>
                       </Nav.Item>
                     </Nav>
@@ -127,7 +127,7 @@ export const Projects = () => {
                       <Tab.Pane eventKey="second">
                         <Row>
                           <ProjectCard key={projects[4]} {...projects[4]} />
-                          <ProjectCard key={projects[5]} {...projects[5]} />
+                          {/* <ProjectCard key={projects[5]} {...projects[5]} /> */}
                           <ProjectCard key={projects[6]} {...projects[6]} />
                         </Row>
                       </Tab.Pane>

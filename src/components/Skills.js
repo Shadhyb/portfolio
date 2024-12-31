@@ -37,7 +37,7 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>Some languages and frameworks that I use the most.</p>
+              <p>Ecco i linguaggi e i frameworks che uso</p>
 
               <Carousel
                 responsive={responsive}
@@ -143,7 +143,7 @@ export const Skills = () => {
         </div>
       </div>
       <p>
-        <span> Drag or swipe this carousel to see them all</span>
+        <span> scorri il carosello per vederli tutti</span>
       </p>
     </section>
   );

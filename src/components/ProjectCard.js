@@ -24,7 +24,7 @@ export const ProjectCard = ({
               window.open(link, "_blank");
             }}
           >
-            Go to page
+            Visita
           </button>
         </div>
       </div>

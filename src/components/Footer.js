@@ -10,7 +10,7 @@ export const Footer = () => {
         <Row className=" align-items-center">
           <Col sm={12} md={6} className="text-align-center">
             <span>
-              Download my Curriculum
+              Scarica il mio Curriculum
               <a href={cv}>
                 {" "}
                 <ArrowDownCircle size={20} />
@@ -35,7 +35,7 @@ export const Footer = () => {
                 <img src={linkedin3d} alt="Icon" />
               </a>
             </div>
-            <p>Copyright &copy; 2023. All Rights Reserved</p>
+            <p>Copyright &copy;Pietro Rimoli - 2023</p>
           </Col>
         </Row>
       </Container>

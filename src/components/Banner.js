@@ -5,7 +5,7 @@ import headerImg from "../assets/img/macbook.png";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Creative", " Front-End Developer"];
+  const toRotate = ["Creativo", " Front-End Developer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.round() * 100);
   const time = 550;
@@ -45,15 +45,15 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
+            <span className="tagline">Benvenuti nel mio Portfolio</span>
             <h1>
-              {`I am Pietro, `} <br />
+              {`Pietro - `} <br />
               <span className="wrap">{text}</span>
             </h1>
             <p>HTML | CSS3 | Javascript | Angular JS | React JS | PHP</p>
             <NavLink href="#contact">
               <button onClick={() => "contact"}>
-                Let's connect
+                Contattami
                 <ArrowRightCircle size={25} />
               </button>
             </NavLink>
